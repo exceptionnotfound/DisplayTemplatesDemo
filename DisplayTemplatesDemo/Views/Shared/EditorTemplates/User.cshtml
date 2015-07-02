@@ -1,0 +1,28 @@
+﻿@model DisplayTemplatesDemo.DataAccess.Model.User
+
+<div>
+    <div>
+        <label>First Name:</label>
+        @Html.TextBoxFor(x => x.FirstName)
+    </div>
+    <div>
+        <label>Middle Initial:</label>
+        @Html.TextBoxFor(x => x.MiddleInitial, new { length = 1 })
+    </div>
+    <div>
+        <label>Last Name:</label>
+        @Html.TextBoxFor(x => x.LastName)
+    </div>
+    <div>
+        <label>Date of Birth:</label>
+        @Html.EditorFor(x => x.DateOfBirth)
+    </div>
+    <div>
+        <label>UserName: </label>
+        @Html.TextBoxFor(x => x.UserName)
+    </div>
+    <div>
+        @Html.CheckBoxFor(x => x.IsAdmin)
+        <label for="IsAdmin">Admin</label>
+    </div>
+</div>

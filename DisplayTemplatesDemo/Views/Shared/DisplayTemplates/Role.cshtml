@@ -1,0 +1,3 @@
+﻿@model DisplayTemplatesDemo.DataAccess.Model.Role
+
+<h3>@Html.ActionLink(Model.Name, "Edit", new { id = Model.ID }) @Html.ActionLink("(" + Model.Users.Count + " Users)", "User", new { id = Model.ID })</h3>

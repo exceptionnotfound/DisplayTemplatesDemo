@@ -1,0 +1,9 @@
+﻿@model DisplayTemplatesDemo.ViewModels.Role.UserRoleVM
+
+@{
+    ViewBag.Title = "Users in Role";
+}
+
+<h1>Users in Role @Model.Role.Name</h1>
+
+@Html.DisplayFor(x=>x.Users)

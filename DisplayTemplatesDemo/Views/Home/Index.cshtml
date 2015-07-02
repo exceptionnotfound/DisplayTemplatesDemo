@@ -1,0 +1,10 @@
+﻿@model List<DisplayTemplatesDemo.DataAccess.Model.User>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h1>Users</h1>
+@Html.ActionLink("Add a User", "Add")
+
+@Html.DisplayForModel()

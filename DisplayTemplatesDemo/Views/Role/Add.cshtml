@@ -1,0 +1,15 @@
+﻿@model DisplayTemplatesDemo.DataAccess.Model.Role
+
+@{
+    ViewBag.Title = "Add a Role";
+}
+
+<h2>Add a Role</h2>
+
+@using(Html.BeginForm("Add", "Role", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    @Html.AntiForgeryToken()
+    @Html.EditorForModel()
+    <input type="submit" value="Save" />
+}

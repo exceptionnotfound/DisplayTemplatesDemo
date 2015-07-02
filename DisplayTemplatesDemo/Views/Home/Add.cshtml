@@ -1,0 +1,15 @@
+﻿@model DisplayTemplatesDemo.DataAccess.Model.User
+
+@{
+    ViewBag.Title = "Add a User";
+}
+
+<h2>Add a User</h2>
+
+@using(Html.BeginForm("Add", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    @Html.AntiForgeryToken()
+    @Html.EditorForModel()
+    <input type="submit" value="Save" />
+}
